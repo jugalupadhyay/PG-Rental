@@ -1,0 +1,47 @@
+.loginForm, .loginForm2 {
+    background-color: #ffffffab;
+    padding: 20px;
+    border: 1px solid rgb(129, 121, 121);
+    border-radius: 1px;
+    width: 80%; 
+    max-width: 400px; 
+    margin: 20px;
+    animation: fadeIn 1s ease-in-out; 
+}
+
+.SignInlogo {
+    width: 200px;
+    object-fit: contain;
+    margin-bottom: 20px; 
+}
+
+#loginbtn {
+    background-color: #1773EA;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .loginForm, .loginForm2 {
+        width: 90%; 
+    }
+
+    #loginbtn {
+        padding: 8px 16px; 
+    }
+}

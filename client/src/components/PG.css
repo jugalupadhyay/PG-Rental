@@ -1,0 +1,38 @@
+.facility-icon {
+    cursor: pointer;
+    position: relative; /* Ensure relative positioning for absolute positioning of the facility names */
+  }
+  
+  .facility-icon::after {
+    content: attr(title); /* Set the content to the title attribute */
+    position: absolute;
+    top: -25px; /* Adjust the distance from the top */
+    left: 50%; /* Position at the center horizontally */
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Add background color with transparency */
+    color: #fff; /* Set text color */
+    padding: 5px; /* Add padding for better visibility */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    font-size: 12px;
+    white-space: nowrap; /* Prevent wrapping of text */
+    visibility: hidden; /* Initially hide the names */
+    opacity: 0; /* Initially make the names transparent */
+    transition: visibility 0s, opacity 0.3s linear; /* Add transition for smooth appearance */
+  }
+  
+  .facility-icon:hover::after {
+    visibility: visible; /* Make the names visible on hover */
+    opacity: 1; /* Make the names fully opaque on hover */
+  }
+  
+  .facility-icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  justify-content: center;
+}
+
+.facility-icons-container li {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}

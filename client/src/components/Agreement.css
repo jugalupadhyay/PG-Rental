@@ -1,0 +1,23 @@
+.agreement-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .agreement-heading {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .lawyer-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .lawyer-item {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  
